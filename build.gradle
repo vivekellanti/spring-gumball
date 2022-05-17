@@ -1,11 +1,11 @@
 plugins {
-	id 'org.springframework.boot' version '2.4.2'
+	id 'org.springframework.boot' version '2.6.7'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 }
 
 group = 'com.example'
-version = '2.0'
+version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 configurations {
@@ -19,7 +19,7 @@ repositories {
 }
 
 ext {
-	set('testcontainersVersion', "1.15.1")
+	set('testcontainersVersion', "1.16.2")
 }
 
 dependencies {
@@ -31,9 +31,6 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.testcontainers:junit-jupiter'
-	testImplementation 'org.testcontainers:selenium'
-	testImplementation 'org.seleniumhq.selenium:selenium-remote-driver'
-	testImplementation 'org.seleniumhq.selenium:selenium-chrome-driver'
 }
 
 dependencyManagement {
@@ -42,6 +39,6 @@ dependencyManagement {
 	}
 }
 
-test {
+tasks.named('test') {
 	useJUnitPlatform()
 }
