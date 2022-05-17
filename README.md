@@ -13,7 +13,13 @@ Creating service account and adding key. I had to make the service account under
 I created the following repository secrets (highlighted in green) under the production environment. The GKE_PROJECT held the projectID value from the json file that was generated once I created a key in the google kubernetes engine.  The GKE_SA_KEY held the value of all contents in the json file.
 <img width="1288" alt="Screen Shot 2022-05-16 at 11 49 30 PM (2)" src="https://user-images.githubusercontent.com/59064994/168747579-a39e0c29-52a5-457f-ad67-7c09338d7615.png">
 
-Screenshots show successful GKE workflow build, deployment
+I created a release titled 1.2 and released it which triggered the GKE workflow to build and deploy. These screenshots showcase a successful release, deployment.
+<img width="1512" alt="Screen Shot 2022-05-16 at 11 55 30 PM" src="https://user-images.githubusercontent.com/59064994/168748477-c4d8616d-e66f-4efa-9a10-0ecb1d6f4eab.png">
+<img width="1512" alt="Screen Shot 2022-05-16 at 11 55 40 PM" src="https://user-images.githubusercontent.com/59064994/168748506-1cad1967-d104-4533-b7d6-79e0a022a962.png">
+<img width="1512" alt="Screen Shot 2022-05-16 at 11 55 47 PM" src="https://user-images.githubusercontent.com/59064994/168748528-bd47c622-ac16-45a6-b4c6-c885cf62195d.png">
+<img width="1512" alt="Screen Shot 2022-05-16 at 11 57 35 PM" src="https://user-images.githubusercontent.com/59064994/168748743-4919c945-6dd4-40c0-a568-6942f1cf8eac.png">
+<img width="1512" alt="Screen Shot 2022-05-16 at 11 57 55 PM" src="https://user-images.githubusercontent.com/59064994/168748755-113f7389-bdc5-4dd9-9255-b7557e1c8623.png">
+
 <img width="1512" alt="Screen Shot 2022-05-16 at 11 26 14 PM" src="https://user-images.githubusercontent.com/59064994/168745259-1b805f31-e1da-47f6-82d3-6ddc5c4f7126.png">
 <img width="1512" alt="Screen Shot 2022-05-16 at 11 26 16 PM" src="https://user-images.githubusercontent.com/59064994/168745281-0b0087d8-cdbf-4544-af6c-c294f4a807e8.png">
 Cluster being made
